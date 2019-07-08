@@ -3,10 +3,19 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { logout } from '../../actions/auth';
+{/* <Route path='/inventory' component={() => window.location = './inventory.html'}/> */}
 
 const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
   const authLinks = (
     <ul>
+
+      {/* <li>
+      <a href="/inventory"> FAQ </a>
+        
+      </li>
+
+      */}
+
       <li>
         <Link to='/technology'>Foglio Technology</Link>
       </li>
